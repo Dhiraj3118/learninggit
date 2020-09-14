@@ -1,5 +1,11 @@
 Version 1:
 
-1) git status: gives the status of repository. If the folder is not git repository then it shows error.
+1) git status: gives the status of repository. If the folder is not git repository then it shows error. If the folder is git repo but it has some files untracked then they are shown in red font while those in the staging area are shown in green font. Even if the file is not staged after modification in git then this will show the file in red font.
 
-2) git init: initializes empty git repository. Means this folder is made a git repository.
+2) git init: initializes empty git repository. Means this folder is made a git repository. It creates a folder named .git which is hidden.
+
+3)git add --a: adds all the files to the staging area.
+	{--a -> all}
+
+4)$ git commit -m "msg" : commit the files in the staging area with the msg.
+	{if we write only git commit then it will open an editor}
