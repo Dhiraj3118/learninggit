@@ -7,6 +7,8 @@ Version 1:
 3)git add --a: adds all the files to the staging area.
 	{--a -> all}
 
+  git add filename.exe: add the specific file to staging area
+
 4)git commit -m "msg" : commit the files in the staging area with the msg.
 	{if we write only git commit then it will open an editor}
 
