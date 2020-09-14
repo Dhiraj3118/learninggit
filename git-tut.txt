@@ -1,0 +1,5 @@
+Version 1:
+
+1) git status: gives the status of repository. If the folder is not git repository then it shows error.
+
+2) git init: initializes empty git repository. Means this folder is made a git repository.
