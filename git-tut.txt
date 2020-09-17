@@ -17,3 +17,7 @@ Version 1:
 6)rm -rf .git: this deletes the .git folder and so our repo will be no more a git repo.
 
 7)git clone url name: this will clone the repo whose url we have used in the command. This url is mostly from github which provides us with option of clone repo and gives us the url. name is optional. Means if we give the name then the repo will be saved by that name else it will be cloned by the it's name on that url. Now if we do some commit in this cloned repo then in git status it will show how much commits we are ahead or back from the original repo.
+
+8)touch filename: creates the file in the repo
+
+touch .gitignore to make a file named .gitignore. In this file save the filenames which you don't want git to track.
