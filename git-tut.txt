@@ -7,9 +7,13 @@ Version 1:
 3)git add --a: adds all the files to the staging area.
 	{--a -> all}
 
-  git add filename.exe: add the specific file to staging area
+  git add filename.exe: add the specific file to staging area.
 
 4)git commit -m "msg" : commit the files in the staging area with the msg.
 	{if we write only git commit then it will open an editor}
 
 5)git log: shows all the commit done in the repo along with author and date
+
+6)rm -rf .git: this deletes the .git folder and so our repo will be no more a git repo.
+
+7)git clone url name: this will clone the repo whose url we have used in the command. This url is mostly from github which provides us with option of clone repo and gives us the url. name is optional. Means if we give the name then the repo will be saved by that name else it will be cloned by the it's name on that url. Now if we do some commit in this cloned repo then in git status it will show how much commits we are ahead or back from the original repo.
