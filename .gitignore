@@ -1,1 +1,9 @@
-abc.txt
+abc.txt //this qill ignore abc.txt
+
+*.log   // this will ignore all the files with extension .log
+
+dir/   //this will ignore the whole directory. but this will ignore all the dir directories
+
+/dir/  //this will ignore only the dir folder in the main repo. if there is any dir inside any folder of repo then it will 	be tracked
+
+we can give the path also here to ignore the certain file or folder.
