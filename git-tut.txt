@@ -11,6 +11,8 @@ Version 1:
 
 4)git commit -m "msg" : commit the files in the staging area with the msg.
 	{if we write only git commit then it will open an editor}
+git commit -a -m "msg" : this will directly commit the files. no need to stage the files using add command. but the files 
+which are untracked means added new to the repo they will not be commited. first we need to use git add command to start tracking them. then if we give this command so they will get commited. they don't have to be staged to commit stage. they can directly be commited
 
 5)git log: shows all the commit done in the repo along with author and date
 
