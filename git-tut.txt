@@ -1,6 +1,6 @@
 Version 1:
 
-1) git status: gives the status of repository. If the folder is not git repository then it shows error. If the folder is git repo but it has some files untracked then they are shown in red font while those in the staging area are shown in green font. Even if the file is not staged after modification in git then this will show the file in red font.
+1) git status: gives the status of repository. If the folder is not git repository then it shows error. If the folder is git repo but it has some files untracked then they are shown in red font while those in the staging area are shown in green font. Even if the file is not staged after modification in git then this will show the file in red font. If added to staging area and then modified so git status will show two times the same file once in green and once in red font.
 
 2) git init: initializes empty git repository. Means this folder is made a git repository. It creates a folder named .git which is hidden.
 
@@ -21,3 +21,7 @@ Version 1:
 8)touch filename: creates the file in the repo
 
 touch .gitignore to make a file named .gitignore. In this file save the filenames which you don't want git to track.
+
+9)git diff: it shows the difference in files of staging area and working directory. 
+
+git diff --staged: this shows difference in files in last commit and staging area.
