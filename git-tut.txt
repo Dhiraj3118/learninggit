@@ -16,6 +16,22 @@ git commit -a -m "msg" : this will directly commit the files. no need to stage t
 which are untracked means added new to the repo they will not be commited. first we need to use git add command to start tracking them. then if we give this command so they will get commited. they don't have to be staged to commit stage. they can directly be commited
 
 5)git log: shows all the commit done in the repo along with author and date
+git -p -2: shows only 2 commits
+git log -p: shows which lines were removed and which were added. it shows each and every changes done
+git log -p -2: shows only 2 commits with each and every changes done
+git log --stat: shows the commites in brief. +++-- means 3 insertions and 2 deletions
+git log --pretty=oneline : shows every commmit in one line(shows the changes made only)
+git log --pretty=short : shows commit with author.
+git log --pretty=full : shows full detail about commits(message, author, commiter){author is the author of file and commiter is the one who made that commit}
+
+git log --pretty=format:"%h -- %an"  :  this will show abbreivated(%h) hash commits with authorname(%an).
+%H - full commit hash
+%ae - author email
+%cn - commiter name          and then there are many others
+
+git log --since=2.days : shows commits made in last 2 days
+git log --since=2.months : shows commits made in last 2 months
+git log --since=2.years : shows commits made in last 2 years
 
 6)rm -rf .git: this deletes the .git folder and so our repo will be no more a git repo.
 
