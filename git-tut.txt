@@ -1,4 +1,4 @@
-Version 1:
+(for pointing to all the files in the repo use .)
 
 1) git status: gives the status of repository. If the folder is not git repository then it shows error. If the folder is git repo but it has some files untracked then they are shown in red font while those in the staging area are shown in green font. Even if the file is not staged after modification in git then this will show the file in red font. If added to staging area and then modified so git status will show two times the same file once in green and once in red font.
 it shows all info which file is deleted, which file is renamed. if we rename some file then first we have to start tracking it using git add and then this command will show renamed file. otherwise it will show that we have deleted the file and added a new file which is not tracked.
@@ -14,6 +14,8 @@ it shows all info which file is deleted, which file is renamed. if we rename som
 	{if we write only git commit then it will open an editor}
 git commit -a -m "msg" : this will directly commit the files. no need to stage the files using add command. but the files 
 which are untracked means added new to the repo they will not be commited. first we need to use git add command to start tracking them. then if we give this command so they will get commited. they don't have to be staged to commit stage. they can directly be commited
+
+git commit --amend: this will open vim editor container the latest commit and so we can ammend our commit msg with it or we can the msg.
 
 5)git log: shows all the commit done in the repo along with author and date
 git -p -2: shows only 2 commits
@@ -49,3 +51,8 @@ git diff --staged: this shows difference in files in last commit and staging are
 git rm --cached abc.txt : this command will stop the tracking of the file. sometimes some files even after adding them to .gitignore are tracked and shown in sit status so we have to untrack them using this command. but yes this will show deleted in status even if it is not deleted. only its cache is deleted. now once we remove it from gitignore it will again be shown in status.
 
 11)git mv abc.txt abcd.txt : this will rename the file abc.txt to abcd.txt. this stages the file too.
+
+12)git restore --staged abc.txt : this will unstage the file
+
+13)git checkout -- abc.txt : this will discard all the changes and will give back the content of last commit
+git checkout -f : this will discard all the changes of repo and will bring back the content of last commit
