@@ -67,7 +67,9 @@ git remote -v: this will show us 2 url one for fetch and one for push(both can b
 {this will show access denied. for running this command we have to add our ssh keys on github account.
 (youtube-codewithharry-gitPlaylist-video13) }
 
-git push origin branchname: first go to that branch and then run the command to push the branch on remote repo
+git push origin branchname : first go to that branch and then run the command to push the branch on remote repo
+git push origin branchname:newbranchname : this will make push the data to the branch names newbranchname at remote repo from the branch branchname at local repo.
+git push -d origin branchname: this will delete the branch at remote repo.
 
 16)git pull origin master: this will pull the new changes made ata remote repo.
 
