@@ -8,7 +8,7 @@ it shows all info which file is deleted, which file is renamed. if we rename som
 3)git add --a: adds all the files to the staging area.
 	{--a -> all}
 
-  git add filename.exe: add the specific file to staging area.
+  git add filename.exe: add the specific file to staging area. this will also mark the file as resolved after we rosolve its conflicts.
 
 4)git commit -m "msg" : commit the files in the staging area with the msg.
 	{if we write only git commit then it will open an editor}
@@ -73,14 +73,13 @@ git remote -v: this will show us 2 url one for fetch and one for push(both can b
 git config --global alias.unstage 'restore --stage --' : use '' for multiword commands. the last -- in the command means whatever comes after unstage keyword should come in place of --.{for eg. I run git unstage abc.txt so this will become git restore --staged abc.txt}
 
 18)git checkout -b branchname: this will create a new branch and we will also switch to that branch.
-git checkout master: this will change our branch to master
+git checkout master: this will change our branch to master(we can also use git switch)
 
 19)git branch : shows all present branches
-
-20)git merge branchname : this will merge our branch with the master branch.
-git branch new: this is also used to make a new branch. but you will remain in master branch.
-git branch -d branchname: deletes the specific branch
+git branch branchname: this is also used to make a new branch. but you will remain in master branch.
 git branch -v: will show last commit's hash and message
 git branch --merged: this will show already merged branches
 git branch --no -merged: this show show branches that are not merged.
 git branch -d branchname: this will give error if branch is not merged.
+
+20)git merge branchname : this will merge our branch with the master branch.
