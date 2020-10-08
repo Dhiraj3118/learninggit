@@ -56,6 +56,8 @@ git rm --cached abc.txt : this command will stop the tracking of the file. somet
 git restore abc.txt:  this will discard all the changes and will give back the content of last commit. close the file and open it again to notice the change
 
 13)git checkout -- abc.txt : this will discard all the changes and will give back the content of last commit.
+git checkout 55df4c2 : this will take us back to the version at the commit with given hash. (get the hash from git log --oneline)
+git checkout 55df4c2 filename : this will the version of file at the commit with the given hash.
 git checkout -f : this will discard all the changes of repo and will bring back the content of last commit
 
 
