@@ -79,7 +79,7 @@ git checkout master: this will change our branch to master(we can also use git s
 git branch branchname: this is also used to make a new branch. but you will remain in master branch.
 git branch -v: will show last commit's hash and message
 git branch --merged: this will show already merged branches
-git branch --no -merged: this show show branches that are not merged.
+git branch --no-merged: this show show branches that are not merged.
 git branch -d branchname: this will give error if branch is not merged.
 
 20)git merge branchname : this will merge our branch with the master branch.
